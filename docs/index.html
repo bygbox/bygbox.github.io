@@ -12,7 +12,7 @@
     <script>
       function tikac() {
         let ticker = document.getElementById("ticker");
-        let tm = new Date().now().toLocaleTimeString('en-GB');
+        let tm = new Date().toLocaleTimeString('en-GB');
         ticker.textContent = tm;
       }
       setInterval(tikac,1000);
