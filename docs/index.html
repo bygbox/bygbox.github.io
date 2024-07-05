@@ -10,8 +10,12 @@
     <main>Ajem hepi heving you hír!</main>
     <div id="ticker"></div>
     <script>
-      let ticker = document.getElementById("ticker");
-      ticker.textContent = "Jsem Dr. No!";
+      function tikac() {
+        let ticker = document.getElementById("ticker");
+        let tm = new Date().now().toLocaleTimeString('en-GB');
+        ticker.textContent = tm;
+      }
+      setInterval(tikac,1000);
     </script>
   </body>
 </html>
